@@ -85,7 +85,7 @@ const UserProfile = () => {
               cookiePolicy="single_host_origin"
               />
               )}
-              </div>
+              {/* </div> */}
         </div>
       </div>
 <div className="text-center mb-7">
@@ -110,7 +110,18 @@ const UserProfile = () => {
             Saved
           </button>
         </div>
-        
+         <div className="px-2">
+          <MasonryLayout pins={pins} />
+        </div>
+
+        {pins?.length === 0 && (
+        <div className="flex justify-center font-bold items-center w-full text-1xl mt-2">
+          No Pins Found!
+        </div>
+        )}
+      </div>
+
+    </div>
     );
 };
 
