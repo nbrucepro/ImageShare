@@ -50,6 +50,7 @@ const UserProfile = () => {
    if (!user) return <Spinner message="Loading profile" />
     return (
       <div className="relative pb-2 h-full justify-center items-center">
+       <div className="flex flex-col pb-5">
         <div className="relative flex flex-col mb-7">
           <div className="flex flex-col justify-center items-center">
             <img
@@ -66,7 +67,6 @@ const UserProfile = () => {
           <h1 className="font-bold text-3xl text-center mt-3">
             {user.userName}
           </h1>
-        </div>
         <div className="absolute top-0 z-1 right-0 p-2">
           {userId === User.googleId && (
             <GoogleLogout
@@ -77,16 +77,40 @@ const UserProfile = () => {
                   className=" bg-white p-2 rounded-full cursor-pointer outline-none shadow-md"
                   onClick={renderProps.onClick}
                   disabled={renderProps.disabled}
-                >
+                  >
                   <AiOutlineLogout color="red" fontSize={21} />
                 </button>
               )}
               onLogoutSuccess={logout}
               cookiePolicy="single_host_origin"
-            />
-          )}
+              />
+              )}
+              </div>
         </div>
       </div>
+<div className="text-center mb-7">
+          <button
+            type="button"
+            onClick={(e) => {
+              setText(e.target.textContent);
+              setActiveBtn('created');
+            }}
+            className={`${activeBtn === 'created' ? activeBtnStyles : notActiveBtnStyles}`}
+          >
+            Created
+          </button>
+          <button
+            type="button"
+            onClick={(e) => {
+              setText(e.target.textContent);
+              setActiveBtn('saved');
+            }}
+            className={`${activeBtn === 'saved' ? activeBtnStyles : notActiveBtnStyles}`}
+          >
+            Saved
+          </button>
+        </div>
+        
     );
 };
 
