@@ -18,6 +18,9 @@ function Home() {
         setUser(data[0]);
       });
     }, []);
+    useEffect(() => {
+        scrollRef.current.scrollTo(0, 0);
+    })
     return (
         <div>
             
