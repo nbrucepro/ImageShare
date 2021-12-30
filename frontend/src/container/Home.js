@@ -28,8 +28,19 @@ function Home() {
             </div>
             <div className="flex md:hidden flex-row">
     <div className="p-2 w-full flex flex-row justify-between items-center shadow-md">
-    <HiMenu fontSize={40} className="cursor-pointer" onClick={() => setToggleSidebar(true)} />                
-</div>
+                    <HiMenu fontSize={40} className="cursor-pointer" onClick={() => setToggleSidebar(true)} />
+                    <Link to="/">
+                        {/* {logo} */}
+                        <img src='/' alt="logo" className="w-28"/>
+                    </Link>
+                    <Link to={`user-profile/${user?._id}`}>
+                        {/* {user?.image} */}
+                        <img src='/' alt="suer-pic" className="w-9 h-9 rounded-full"/>
+                    </Link>
+                </div>
+                {toggleSidebar && (
+                    <div></div>
+                )}
             </div>
       </div>
     );
