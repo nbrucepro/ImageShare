@@ -19,6 +19,12 @@ const UserProfile = () => {
     const navigate = useNavigate();
     const { userId } = useParams();
     const User = localStorage.getItem('user') !== 'undefined' ? JSON.parse(localStorage.getItem('user')) : localStorage.clear();
+    useEffect(() => {
+        const query = userQuery(userId);
+        client.fetch(query).then((data) => {
+            setUser(data[0]);
+        });
+    }, [userId]);
   return <div></div>;
 };
 
