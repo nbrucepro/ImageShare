@@ -85,7 +85,6 @@ const UserProfile = () => {
               cookiePolicy="single_host_origin"
               />
               )}
-              {/* </div> */}
         </div>
       </div>
 <div className="text-center mb-7">
