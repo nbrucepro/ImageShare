@@ -9,6 +9,15 @@ import { Link, Route, Routes } from "react-router-dom";
 // import Pins from "./Pins";
 // import logo from "../assets/logo.png";
 function Home() {
+    const [toggleSidebar, setToggleSidebar] = useState(false);
+    const [user, setUser] = useState();
+    const scrollRef = useRef(null);
+    useEffect(() => {
+      const query = userQuery(userInfo?.googleId);
+      client.fetch(query).then((data) => {
+        setUser(data[0]);
+      });
+    }, []);
     return (
         <div>
             
