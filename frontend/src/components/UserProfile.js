@@ -47,7 +47,7 @@ const UserProfile = () => {
    };
 
 
-   if (!user) return <Spinner message="Loading profile" />;
+   if (!user) return <Spinner message="Loading profile" />
   return <div></div>;
 };
 
