@@ -12,7 +12,8 @@ function App() {
   }, []);
   return (
     <Routes>
-      <div className="App"></div>
+      <Route path="login" element={<Login/>}/>
+      <Route path="/*" element={<Home/>}/>
     </Routes>
   );
 }
