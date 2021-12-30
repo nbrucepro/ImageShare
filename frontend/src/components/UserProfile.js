@@ -48,7 +48,24 @@ const UserProfile = () => {
 
 
    if (!user) return <Spinner message="Loading profile" />
-  return <div></div>;
+    return (
+        <div className="relative pb-2 h-full justify-center items-center">
+       <div className="relative flex flex-col mb-7">
+          <div className="flex flex-col justify-center items-center">
+            <img
+              className=" w-full h-370 2xl:h-510 shadow-lg object-cover"
+              src="https://source.unsplash.com/1600x900/?nature,photography,technology"
+              alt="user-pic"
+            />
+            <img
+              className="rounded-full w-20 h-20 -mt-10 shadow-xl object-cover"
+              src={user.image}
+              alt="user-pic"
+            />
+                </div>
+                </div>
+    </div>
+    );
 };
 
 export default UserProfile;
