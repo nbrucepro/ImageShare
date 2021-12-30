@@ -40,7 +40,11 @@ const UserProfile = () => {
        });
      }
    }, [text, userId]);
+   const logout = () => {
+     localStorage.clear();
 
+     navigate("/login");
+   };
 
 
    if (!user) return <Spinner message="Loading profile" />;
