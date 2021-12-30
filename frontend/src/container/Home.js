@@ -50,6 +50,12 @@ function Home() {
                               <Sidebar closeToggle={setToggleSidebar} user={user && user} />
             </div>
           )}
+            </div>
+            <div className=" pb-2 flex-1 h-screen overflow-y-scroll" ref={scrollRef}>
+                <Routes>
+                    <Route path="/user-profile/:userId" element={<UserProfile/>}/>
+                    <Route path="/*" element={user && user}/>
+            </Routes>    
         </div>
       </div>
     );
