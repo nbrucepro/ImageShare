@@ -17,3 +17,4 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([pin, user, postedBy, comment, save]),
 });
+///bruce in 2022
