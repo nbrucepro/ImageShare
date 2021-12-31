@@ -28,6 +28,11 @@ const Feed = () => {
     }
   }, [categoryId]);
   const ideaName = categoryId || "new";
-  };
+if (loading) {
+return <Spinner message={`We are adding ${ideaName} ideas to your feed!`} />;
+}
+return <div>{pins && <MasonryLayout pins={pins} />}</div>;
+  
+};
 
 export default Feed;
