@@ -1,6 +1,6 @@
-// First, we must import the schema creator
+// First, we must import the schema creators
 import createSchema from "part:@sanity/base/schema-creator";
-
+//visting
 // Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
 import pin from "./pin";
