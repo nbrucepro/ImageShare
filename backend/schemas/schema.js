@@ -5,7 +5,7 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 import pin from "./pin";
 import user from "./user";
-import comment from "./comment";
+import comment from "./comment";  //amahoroo
 import postedBy from "./postedBy";
 import save from "./save";
 
