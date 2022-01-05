@@ -9,7 +9,7 @@ import comment from "./comment";  //amahoroo
 import postedBy from "./postedBy";
 import save from "./save";
 
-// Then we give our schema to the builder and provide the result to Sanity
+// Then we give our schema to the builder andand provide the result to Sanity
 export default createSchema({
   // We name our schema bruce
 //welcome in 20222
