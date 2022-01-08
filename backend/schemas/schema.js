@@ -14,7 +14,7 @@ export default createSchema({
   // We name our schema bruce hi
 //welcome in 20222//nodeishrere
 //ANother-_-day
-//ibiniik
+//ibiniikbipi
 //ii am waiting herewego
   name: "default",
   // Then proceed to concatenate our document type
