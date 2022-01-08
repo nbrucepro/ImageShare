@@ -6,7 +6,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import pin from "./pin";
 import user from "./user";
 import comment from "./comment";  //amahoroo
-import postedBy from "./postedBy";//nom
+import postedBy from "./postedBy";//nomnomnoms
 import save from "./save";
 
 // Then we give our schema to the builder andand provide the result to Sanity
