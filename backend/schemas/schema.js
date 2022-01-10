@@ -5,7 +5,7 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 import pin from "./pin";///NNNNNN
 import user from "./user";
-import comment from "./comment";  //amahoroo
+import comment from "./comment";  //amahoroo//PYUOUOIOIJ
 import postedBy from "./postedBy";//nomnomnoms
 import save from "./save";
 //yop
