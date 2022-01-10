@@ -3,7 +3,7 @@ import createSchema from "part:@sanity/base/schema-creator";
 //visting
 // Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
-import pin from "./pin";
+import pin from "./pin";///NNNNNN
 import user from "./user";
 import comment from "./comment";  //amahoroo
 import postedBy from "./postedBy";//nomnomnoms
