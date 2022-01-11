@@ -12,7 +12,7 @@ import save from "./save";
 // Then we give our schema to the builder andand provide the result to Sanity
 export default createSchema({
   // We name our schema bruce hi
-//welcome in 20222//nodeishrere
+//welcome in 20222//nodeishrere schoolcmn
 //ANother-_-day
 //ibiniikbipiAMARIRAYABRUCE
 //ii am waiting herewego
