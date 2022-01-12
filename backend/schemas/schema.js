@@ -8,7 +8,7 @@ import user from "./user";
 import comment from "./comment";  //amahoroo//PYUOUOIOIJ
 import postedBy from "./postedBy";//nomnomnoms
 import save from "./save";
-//yop
+//yop nodemailwer
 // Then we give our schema to the builder andand provide the result to Sanity
 export default createSchema({
   // We name our schema bruce hi
