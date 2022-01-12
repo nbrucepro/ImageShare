@@ -10,7 +10,7 @@ import postedBy from "./postedBy";//nomnomnoms
 import save from "./save";
 //yop nodemailwera
 // Then we give our schema to the builder andand provide the result to Sanity
-export default createSchema({
+export default createSchema({//ilovejs
   // We name our schema bruce hi
 //welcome in 20222//nodeishrere schoolcmn
 //ANother-_-day
