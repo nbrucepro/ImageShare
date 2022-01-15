@@ -81,6 +81,7 @@ const CreatePin = ({ user }) => {
       }, 2000);
     }
     ///sanity i will come
+    //admindashboard
   };
   return (
     <div className="flex flex-col justify-center items-center mt-5 lg:h-4/5">
