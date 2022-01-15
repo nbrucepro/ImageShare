@@ -11,6 +11,7 @@ export default {
     },
     {
       name: "image",
+      //imageisherenow
       title: "Image",
       type: "string",
     },
