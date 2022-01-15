@@ -80,6 +80,7 @@ const CreatePin = ({ user }) => {
         setFields(false);
       }, 2000);
     }
+    ///sanity i will come
   };
   return (
     <div className="flex flex-col justify-center items-center mt-5 lg:h-4/5">
