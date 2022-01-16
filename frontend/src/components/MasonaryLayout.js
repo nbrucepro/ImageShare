@@ -9,8 +9,8 @@ const breakpointColumnsObj = {
   1200: 3,
   1000: 2,
   500: 1,
-};
-//ofofrudeboy..galanightthis
+};//``.S
+//ofofrudeboy..galanightthisS
 
  const MasonryLayout = ({ pins }) => (
    <Masonry className="flex animate-slide-fwd" breakpointCols={breakpointColumnsObj}>
