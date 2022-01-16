@@ -10,7 +10,7 @@ const breakpointColumnsObj = {
   1000: 2,
   500: 1,
 };//``.S
-//ofofrudeboy..galanightthisSMACHINEEIS SD
+//ofofrudeboy..galanightthisSMACHINEEIS SD FREEZING
 
  const MasonryLayout = ({ pins }) => (
    <Masonry className="flex animate-slide-fwd" breakpointCols={breakpointColumnsObj}>
