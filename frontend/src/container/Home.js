@@ -25,7 +25,7 @@ function Home() {
         <div className="hidden md:flex h-screen flex-initial">
           {/* <Sidebar user={user && user} /> */}
           //whathasihejuru
-          //idoknowifI
+          //idoknowifIcould
         </div>
         <div className="flex md:hidden flex-row">
           <div className="p-2 w-full flex flex-row justify-between items-center shadow-md">
