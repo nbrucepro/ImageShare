@@ -19,3 +19,27 @@ const breakpointColumnsObj = {
 );
 
 export default MasonryLayout;
+
+
+
+
+
+
+
+ CREATE TRIGGER updateaccount
+     before
+     insert
+     on account
+     FOR EACH ROW
+     BEGIN
+     DECLARE amount INT default 0;
+     DECLARE tAmount INT default 0;
+     DECLARE tTYPE varchar(12);
+     SET tTYPE = (SELECT tType from transaction);
+     SET tAmount = (SELECT tAmount from transaction);
+     IF(tTYPE = 'deposit' ) THEN
+     SET new.amount =tAmount + new.amount;
+     ELSE
+     SET new.amount = tAmount - new.amount;
+     END
+    
