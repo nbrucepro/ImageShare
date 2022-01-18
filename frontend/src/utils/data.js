@@ -228,6 +228,7 @@ export const userSavedPinsQuery = (userId) => {
         userName,
         image
       },
+
     },
   }`;
   return query;
