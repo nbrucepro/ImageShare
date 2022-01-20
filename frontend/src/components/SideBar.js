@@ -27,6 +27,10 @@ const SideBar = ({closeToggle,user}) => {
         //flexitems-center
         //flexitems-center
         //flexitems-center
+        //flexitems-center
+        //flexitems-center
+        //flexitems-center
+        //flexitems-center
         if (closeToggle) closeToggle(false);
       };
     return (
