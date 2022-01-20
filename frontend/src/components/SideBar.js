@@ -14,6 +14,11 @@ const SideBar = ({closeToggle,user}) => {
         //brucehardisk
         //brucehardisk
         //brucehardisk
+        //brucehardisk
+        //brucehardisk
+        //brucehardisk
+        //brucehardisk
+        //brucehardisk
         if (closeToggle) closeToggle(false);
       };
     return (
