@@ -23,6 +23,10 @@ const SideBar = ({closeToggle,user}) => {
         //brucehardisk
         //brucehardisk
         //brucehardisk
+        //flexitems-center
+        //flexitems-center
+        //flexitems-center
+        //flexitems-center
         if (closeToggle) closeToggle(false);
       };
     return (
