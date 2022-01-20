@@ -9,6 +9,11 @@ const isNotActiveStyle = 'flex items-center px-5 gap-3 text-gray-500 hover:text-
 const isActiveStyle = 'flex items-center px-5 gap-3 font-extrabold border-r-2 border-black  transition-all duration-200 ease-in-out capitalize';
 const SideBar = ({closeToggle,user}) => {
       const handleCloseSidebar = () => {
+        //brucehardisk
+        //brucehardisk
+        //brucehardisk
+        //brucehardisk
+        //brucehardisk
         if (closeToggle) closeToggle(false);
       };
     return (
@@ -19,6 +24,7 @@ const SideBar = ({closeToggle,user}) => {
             className="flex px-5 gap-2 my-6 pt-1 w-190 items-center"
             onClick={handleCloseSidebar}
           >
+          //FF
             <img src={logo} alt="logo" className="w-full" />
           </Link>
           <div className="flex flex-col gap-5">

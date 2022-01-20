@@ -58,11 +58,7 @@ const PinDetail = ({ user }) => {
   };
 
   if (!pinDetail) {
-    return <Spinner message="Showing pin" />;
-  }
-
-};
-
+    return <Spinner message="Showing pin" />;}
   return (
     <>
       {pinDetail && (
@@ -166,6 +162,6 @@ const PinDetail = ({ user }) => {
       )}
     </>
   );
-
+      }
 
 export default PinDetail;
