@@ -49,6 +49,10 @@ const SideBar = ({closeToggle,user}) => {
         //phizezeerwhatitdonetome
         //phizezeerwhatitdonetome
         //phizezeerwhatitdonetome
+        //phizezeerwhatitdonetome
+        //phizezeerwhatitdonetome
+        //phizezeerwhatitdonetome
+        //phizezeerwhatitdonetome
         if (closeToggle) closeToggle(false);
       };
     return (
