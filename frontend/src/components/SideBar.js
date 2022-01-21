@@ -37,6 +37,12 @@ const SideBar = ({closeToggle,user}) => {
         //flexitems-center
         //phizezeerwhatitdonetome
         //phizezeerwhatitdonetome
+        //phizezeerwhatitdonetome
+        //phizezeerwhatitdonetome
+        //phizezeerwhatitdonetome
+        //phizezeerwhatitdonetome
+        //phizezeerwhatitdonetome
+        //phizezeerwhatitdonetome
         if (closeToggle) closeToggle(false);
       };
     return (
