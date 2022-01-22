@@ -200,4 +200,3 @@ const SideBar = ({closeToggle,user}) => {
 };
 
 export default SideBar;
-
