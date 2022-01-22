@@ -3,6 +3,7 @@ import './App.css';
 // import { Routes, Route, useNavigate } from "react-router-dom";
 
 // import { Login } from "./components";
+import Login from './components/Login';
 // import Home from "./container/Home.js";
 function App() {
   // const navigate = useNavigate();
@@ -11,15 +12,16 @@ function App() {
   //   if (!user) navigate('login');
   // }, []);
   // <Routes>
-  //   <Route path="login" element={<Login/>}/>
-  //   <Route path="/*" element={<Home/>}/>
-  // </Routes>
+  // <Route path="login" element={<Login/>}/>  {/* //   <Route path="/*" element={<Home/>}/> */}
+  //  </Routes>
   //https://lms.simplilearn.com/courses/4215/ReactJS-for-Beginners/syllabus
   return (
-    <div className="bg-white">
-      <p className="transition-all text-white duration-150 ease-in text-4xl font-bold break-words mt-3 flex animate-slide-fwd">
+    <div>
+      {/* <p className="transition-all text-white duration-150 ease-in text-4xl font-bold break-words mt-3 flex animate-slide-fwd">
         hi
-      </p>
+      </p> */}
+      <Login />
+      what
     </div>
   );
 }
