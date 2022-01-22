@@ -179,7 +179,8 @@ export const searchQuery = (searchTerm) => {
 };
 
 export const userQuery = (userId) => {
-  const query = `*[_type == "user" && _id == '${userId}']`;
+  const query = `*[_type = "user" && _id == '${userId}']`;
+  // const query = `*[_type=="user" && _id=='${userId}']`;
   return query;
 };
 

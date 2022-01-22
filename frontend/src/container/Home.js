@@ -1,39 +1,43 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { HiMenu } from "react-icons/hi";
 import { AiFillCloseCircle } from "react-icons/ai";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { Sidebar, UserProfile } from "../components";
-// import { userQuery } from "../utils/data";
-// import { client } from "../client";
+//Route, Routes , useRef
+// import { UserProfile } from "../components";
+import { userQuery } from "../utils/data";
+import { client } from "../client";
 // import Pins from "./Pins";
-// import logo from "../assets/logo.png";
+import logo from "../assets/Sanity Social Media App Assets/logo.png";
 function Home() {
     const [toggleSidebar, setToggleSidebar] = useState(false);
-    const [user, setUser] = useState();
-    const scrollRef = useRef(null);
-    useEffect(() => {
-      const query = userQuery(userInfo?.googleId);
-      client.fetch(query).then((data) => {
-        setUser(data[0]);
-      });
-    }, []);
-    useEffect(() => {
-        scrollRef.current.scrollTo(0, 0);
+  const [user, setUser] = useState(null);
+  // const userInfo = localStorage.getItem('user') !== "" ? JSON.parse(localStorage.getItem('user')) : localStorage.clear();
+  // const userInfo = localStorage.getItem("user");
+  // console.log(userInfo);
+  // console.log(userInfo?.email);
+  const userInfo = JSON.parse(localStorage.getItem("user"));
+  // const scrollRef = useRef(null);
+  useEffect(() => {
+
+    const query = userQuery(userInfo?.googleId);
+    // client.fetch(query).then((data) => {
+    //   setUser(data[0]);
+    //   console.log(user);
+    //   });
+    client.fetch(query).then((data) => {
+      console.log(data);
     })
+     }, []);
+    // useEffect(() => {
+    //     scrollRef.current.scrollTo(0, 0);
+    // })
     return (
       <div className="flex bg-gray-50 md:flex-row flex-col h-screen transion-height duration-75 ease-out">
         <div className="hidden md:flex h-screen flex-initial">
           {/* <Sidebar user={user && user} /> */}
-          //whathasihejuru //idoknowifIcouldevergowithoutwateermelon.
-          //whathasihejuru //idoknowifIcouldevergowithoutwateermelon.
-          //whathasihejuru //idoknowifIcouldevergowithoutwateermelon.
-          //whathasihejuru //idoknowifIcouldevergowithoutwateermelon.
-          //whathasihejuru //idoknowifIcouldevergowithoutwateermelon.
-          //whathasihejuru //idoknowifIcouldevergowithoutwateermelon.
-          //whathasihejuru //idoknowifIcouldevergowithoutwateermelon.
-          //whathasihejuru //idoknowifIcouldevergowithoutwateermelon.
         </div>
-        <div className="flex md:hidden flex-row">
+        <div className="flex mid:hidden flex-row">
           <div className="p-2 w-full flex flex-row justify-between items-center shadow-md">
             <HiMenu
               fontSize={40}
@@ -42,11 +46,15 @@ function Home() {
             />
             <Link to="/">
               {/* {logo} */}
-              <img src="/" alt="logo" className="w-28" />
+              <img src={logo} alt="logo" className="w-28" />
             </Link>
             <Link to={`user-profile/${user?._id}`}>
               {/* {user?.image} */}
-              <img src="/" alt="suer-pic" className="w-9 h-9 rounded-full" />
+              <img
+                src={userInfo.imageUrl}
+                alt='{user?.name}'
+                className="w-9 h-9 rounded-full"
+              />
             </Link>
           </div>
           {toggleSidebar && (
@@ -58,11 +66,11 @@ function Home() {
                   onClick={() => setToggleSidebar(false)}
                 />
               </div>
-              <Sidebar closeToggle={setToggleSidebar} user={user && user} />
+              {/* <Sidebar closeToggle={setToggleSidebar} user={user && user} /> */}
             </div>
           )}
         </div>
-        <div
+        {/* <div
           className=" pb-2 flex-1 h-screen overflow-y-scroll"
           ref={scrollRef}
         >
@@ -70,7 +78,7 @@ function Home() {
             <Route path="/user-profile/:userId" element={<UserProfile />} />
             <Route path="/*" element={user && user} />
           </Routes>
-        </div>
+        </div> */}
       </div>
     );
 }

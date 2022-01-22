@@ -1,25 +1,25 @@
 import React from "react";
 import GoogleLogin from "react-google-login";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import shareVideo from "../assets/Sanity Social Media App Assets/share.mp4";
 import logo from "../assets/Sanity Social Media App Assets/logowhite.png";
 
-// import { client } from "../client";
+import { client } from "../client";
 const Login = () => {
-//   const navigate = useNavigate();
+  const navigate = useNavigate();
   const responseGoogle = (response) => {
-    // localStorage.setItem("user", JSON.stringify(response.profileObj));
-    // const { name, googleId, imageUrl } = response.profileObj;
-    // const doc = {
-    //   _id: googleId,
-    //   _type: "user",
-    //   userName: name,
-    //   image: imageUrl,
-    // };
-    // client.createIfNotExists(doc).then(() => {
-    //   navigate("/", { replace: true });
-    // });
+      localStorage.setItem("user", JSON.stringify(response.profileObj));
+      const { name, googleId, imageUrl } = response.profileObj;
+      const doc = {
+          _id: googleId,
+          _type: "user",
+          userName: name,
+          image: imageUrl,
+      };
+      client.createIfNotExists(doc).then(() => {
+          navigate("/", { replace: true });
+})
   };
 return (
   <div className="flex justify-start items-center flex-col h-screen">
@@ -41,8 +41,8 @@ return (
 
         <div className="shadow-2xl">
           <GoogleLogin
-            // clientId="979068446025-mkpdg62d7ctbeldpoop3j8oe5u7d0cor.apps.googleusercontent.com"
-            clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}
+            clientId="979068446025-mkpdg62d7ctbeldpoop3j8oe5u7d0cor.apps.googleusercontent.com"
+            // clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}
             render={(renderProps) => (
               <button
                 type="button"

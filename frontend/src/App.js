@@ -1,12 +1,12 @@
 import './App.css';
 // import React, { useEffect } from "react";
-// import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 // import { Login } from "./components";
 import Login from './components/Login';
-// import Home from "./container/Home.js";
+import Home from "./container/Home.js";
 function App() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   // useEffect(() => {
   //   const user = localStorage.getItem('user') !== 'undefined' ? JSON.parse(localStorage.getItem('user')) : localStorage.clear();
   //   if (!user) navigate('login');
@@ -20,8 +20,10 @@ function App() {
       {/* <p className="transition-all text-white duration-150 ease-in text-4xl font-bold break-words mt-3 flex animate-slide-fwd">
         hi
       </p> */}
-      <Login />
-      what
+      <Routes>
+        <Route path="login" element={<Login />} />
+        <Route path="/*" element={<Home />} />
+      </Routes>
     </div>
   );
 }
