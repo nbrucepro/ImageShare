@@ -27,6 +27,9 @@ const UserProfile = () => {
   // const navigate = useNavigate();
   // const navigate = useNavigate();
   // const navigate = useNavigate();
+  // const navigate = useNavigate();
+  // const navigate = useNavigate();
+  // const navigate = useNavigate();
     const navigate = useNavigate();
     const { userId } = useParams();
     const User = localStorage.getItem('user') !== 'undefined' ? JSON.parse(localStorage.getItem('user')) : localStorage.clear();
