@@ -16,6 +16,7 @@ const UserProfile = () => {
     const [pins, setPins] = useState();
     const [text, setText] = useState("Created");
     const [activeBtn, setActiveBtn] = useState("created");
+  // const navigate = useNavigate();
     const navigate = useNavigate();
     const { userId } = useParams();
     const User = localStorage.getItem('user') !== 'undefined' ? JSON.parse(localStorage.getItem('user')) : localStorage.clear();
