@@ -208,14 +208,13 @@ return (
         controls={false}
         muted
         autoPlay
-        className="w-full h-full object-cover"
+        // className="w-full h-full object-cover"
+        className="this is but"
       />
-
       <div className="absolute flex flex-col justify-center items-center top-0 right-0 left-0 bottom-0    bg-blackOverlay">
         <div className="p-5">
           <img src={logo} width="130px" alt="logo" />
         </div>
-
         <div className="shadow-2xl">
           <GoogleLogin
             clientId="979068446025-mkpdg62d7ctbeldpoop3j8oe5u7d0cor.apps.googleusercontent.com"
