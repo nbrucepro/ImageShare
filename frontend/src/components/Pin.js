@@ -150,6 +150,11 @@ const Pin = ({ pin }) => {
     </div>
   );
 };
-
+//endofweekandmonthGodhelp
+//endofweekandmonthGodhelp
+//endofweekandmonthGodhelp
+//endofweekandmonthGodhelp
+//endofweekandmonthGodhelp
+//endofweekandmonthGodhelp
 
 export default Pin;
