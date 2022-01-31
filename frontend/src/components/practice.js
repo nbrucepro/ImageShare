@@ -116,6 +116,10 @@ function fin(ops) {
 // console.log(fin(["5", "2","C","D","+"]));
 // console.log(fin(["5", "2","C","D","+"]));
 // console.log(fin(["5", "2","C","D","+"]));
+// console.log(fin(["5", "2","C","D","+"]));
+// console.log(fin(["5", "2","C","D","+"]));
+// console.log(fin(["5", "2","C","D","+"]));
+// console.log(fin(["5", "2","C","D","+"]));
 
 // console.log(fin(["5", "2","C","D","+"]));
 // console.log(fin(["5", "2","C","D","+"]));
