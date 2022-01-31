@@ -18,3 +18,4 @@ function fin(ops) {
         a + b
     }, 0);
 }
+console.log(fin(["1", "2"]));
