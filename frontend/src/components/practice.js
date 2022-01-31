@@ -19,5 +19,7 @@ function fin(ops) {
         a + b
      }, 0);
     return result;
+    // return result;
+    // return result;
 }
 console.log(fin(["1", "2"]));
