@@ -1,4 +1,5 @@
 function fin(ops) {
+    var result = 0;
   let score = [];
   for (let i = 0; i < score.length; i++) {
     if (!isNaN(ops[i])) {
@@ -12,5 +13,8 @@ function fin(ops) {
     } else {
       console.log("undefined");
     }
-  }
+    }
+    return result = score.reduce((a, b) => {
+        a + b
+    }, 0);
 }
