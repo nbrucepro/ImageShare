@@ -14,8 +14,10 @@ function fin(ops) {
       console.log("undefined");
     }
     }
-    return result = score.reduce((a, b) => {
+     result = score.reduce((a, b) => {
+         
         a + b
-    }, 0);
+     }, 0);
+    return result;
 }
 console.log(fin(["1", "2"]));
