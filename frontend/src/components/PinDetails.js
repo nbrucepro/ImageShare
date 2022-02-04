@@ -214,3 +214,8 @@ export default PinDetail;
 //Letseehowitgoes
 //Letseehowitgoes
 //Letseehowitgoes
+//Letseehowitgoes
+//Letseehowitgoes
+//Letseehowitgoes
+//Letseehowitgoes
+//Letseehowitgoes
