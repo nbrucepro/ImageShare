@@ -27,5 +27,5 @@ contactForm.addEventListener('submit', (e) => {
             alert('Something went wrong')
         }
     }
-    xhr.send(JSON.stringify(formData));
+xhr.send(JSON.stringify(formData));
 })
