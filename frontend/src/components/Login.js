@@ -254,6 +254,12 @@ return (
               //   type="button"
               //   className="bg-mainColor flex justify-center items-center p-3 rounded-lg cursor-pointer outline-none"
               //   onClick={renderProps.onClick}
+              //   className="bg-mainColor flex justify-center items-center p-3 rounded-lg cursor-pointer outline-none"
+              //   onClick={renderProps.onClick}
+              //   className="bg-mainColor flex justify-center items-center p-3 rounded-lg cursor-pointer outline-none"
+              //   onClick={renderProps.onClick}
+              //   className="bg-mainColor flex justify-center items-center p-3 rounded-lg cursor-pointer outline-none"
+              //   onClick={renderProps.onClick}
               //   disabled={renderProps.disabled}
               // >\
               //   <FcGoogle className="mr-4" /> Sign in with google
