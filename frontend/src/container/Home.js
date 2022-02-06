@@ -21,11 +21,8 @@ function Home() {
   useEffect(() => {
 
     const query = userQuery(userInfo?.googleId);
-    // client.fetch(query).then((data) => {
-    //   setUser(data[0]);
-    //   console.log(user);
-    //   });
     client.fetch(query).then((data) => {
+      setUser(data[0])
       console.log(data);
     })
      }, []);
@@ -33,11 +30,11 @@ function Home() {
     //     scrollRef.current.scrollTo(0, 0);
     // })
     return (
-      <div className="flex bg-gray-50 md:flex-row flex-col h-screen transion-height duration-75 ease-out">
+      <div className="flex bg-gray-50 md:flex-row flex-col h-screen transition-height duration-75 ease-out">
         <div className="hidden md:flex h-screen flex-initial">
           {/* <Sidebar user={user && user} /> */}
         </div>
-        <div className="flex mid:hidden flex-row">
+        <div className="flex md:hidden flex-row">
           <div className="p-2 w-full flex flex-row justify-between items-center shadow-md">
             <HiMenu
               fontSize={40}
@@ -45,15 +42,13 @@ function Home() {
               onClick={() => setToggleSidebar(true)}
             />
             <Link to="/">
-              {/* {logo} */}
               <img src={logo} alt="logo" className="w-28" />
             </Link>
             <Link to={`user-profile/${user?._id}`}>
-              {/* {user?.image} */}
               <img
-                src={userInfo.imageUrl}
-                alt='{user?.name}'
-                className="w-9 h-9 rounded-full"
+                src={user?.image}
+                alt="user-pic"
+                className="w-9 h-9 rounded-full "
               />
             </Link>
           </div>
@@ -70,16 +65,12 @@ function Home() {
             </div>
           )}
         </div>
-        {/* <div
-          className=" pb-2 flex-1 h-screen overflow-y-scroll"
-          ref={scrollRef}
-        >
-          <Routes>
-            <Route path="/user-profile/:userId" element={<UserProfile />} />
-            <Route path="/*" element={user && user} />
-          </Routes>
-        </div> */}
+        {/* <div className="pb-2 flex-1 h-screen overflow-y-scroll" ref={scrollRef}> */}
+          {/* <Routes> */}
+            {/* <Route path="/user-profile/:userId" element={<UserProfile />} />
+            <Route path="/*" element={<Pins user={user && user} />} /> */}
+          {/* </Routes> */}
+        {/* </div> */}
       </div>
-    );
-}
+    );}
 export default Home;
